@@ -1,0 +1,73 @@
+export const CATEGORIES = [
+  { id: 'laundry', icon: '🧺', label: 'ซักผ้า' },
+  { id: 'clean', icon: '🧹', label: 'ทำความสะอาด' },
+  { id: 'bath', icon: '🧴', label: 'ห้องน้ำ' },
+  { id: 'kitchen', icon: '🍚', label: 'ครัว' },
+  { id: 'paper', icon: '🧻', label: 'กระดาษ' },
+  { id: 'drink', icon: '🥤', label: 'เครื่องดื่ม' },
+  { id: 'pet', icon: '🐾', label: 'สัตว์เลี้ยง' },
+  { id: 'other', icon: '📦', label: 'อื่นๆ' },
+]
+
+export const ITEMS = {
+  laundry: [
+    { id: 'laundry_01', photo: 'images/laundry_01.jpg', name: 'ไฮเตอร์', name_ko: '하이타 표백제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'laundry_02', photo: 'images/laundry_02.jpg', name: 'น้ำยารีดผ้า', name_ko: '다림질세제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'laundry_03', photo: 'images/laundry_03.jpg', name: 'ผงซักฟอก บริส', name_ko: '브리스 가루세제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'laundry_04', photo: 'images/laundry_04.jpg', name: 'น้ำยาซักผ้าเด็ก Baby Mild', name_ko: '베이비마일드 아기세탁세제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'laundry_05', photo: 'images/laundry_05.jpg', name: 'น้ำยาซักผ้าบริส', name_ko: '브리스 세탁세제', store: 'Big C', orderer: 'Aeey' },
+  ],
+  clean: [
+    { id: 'clean_01', photo: 'images/clean_01.jpg', name: 'Dettol น้ำยาฆ่าเชื้อ', name_ko: '데톨 소독액', store: 'Big C', orderer: 'Aeey' },
+    { id: 'clean_02', photo: 'images/clean_02.jpg', name: 'Magiclean ทำความสะอาดห้องครัว', name_ko: '매직클린 주방세정제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'clean_03', photo: 'images/clean_03.jpg', name: 'น้ำยาล้างห้องน้ำ', name_ko: '화장실세정제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'clean_04', photo: 'images/clean_04.jpg', name: 'น้ำยาถูพื้น', name_ko: '바닥세정제', store: 'Big C', orderer: 'Aeey' },
+  ],
+  bath: [
+    { id: 'bath_01', photo: 'images/bath_01.jpg', name: 'ยาสีฟัน Darlie', name_ko: '달리 치약', store: 'Big C', orderer: 'Aeey' },
+    { id: 'bath_02', photo: 'images/bath_02.jpg', name: 'ยาสีฟัน Kodomo', name_ko: '코도모 치약', store: 'Big C', orderer: 'Aeey' },
+    { id: 'bath_03', photo: 'images/bath_03.jpg', name: 'น้ำยาบ้วนปาก คอนเกต', name_ko: '콜게이트 구강청결제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'bath_04', photo: 'images/bath_04.jpg', name: 'น้ำยาล้างมือ', name_ko: '핸드워시', store: 'Big C', orderer: 'Aeey' },
+    { id: 'bath_05', photo: 'images/bath_05.jpg', name: 'ยาสระผมเด็ก Johnson', name_ko: '존슨 아기샴푸', store: 'Big C', orderer: 'Aeey' },
+    { id: 'bath_06', photo: 'images/bath_06.jpg', name: 'ครีมอาบน้ำ Baby Mild ขวดม่วง', name_ko: '베이비마일드 바디워시(보라)', store: 'Big C', orderer: 'Aeey' },
+    { id: 'bath_07', photo: 'images/bath_07.jpg', name: 'ครีมอาบน้ำ Baby Mild ขวดขาว', name_ko: '베이비마일드 바디워시(흰)', store: 'Big C', orderer: 'Aeey' },
+  ],
+  kitchen: [
+    { id: 'kitchen_01', photo: 'images/kitchen_01.jpg', name: 'ซอสมะเขือเทศ', name_ko: '케첩', store: 'Big C', orderer: 'Aeey' },
+    { id: 'kitchen_02', photo: 'images/kitchen_02.jpg', name: 'นม Almond', name_ko: '아몬드우유', store: 'Big C', orderer: 'Aeey' },
+    { id: 'kitchen_03', photo: 'images/kitchen_03.jpg', name: 'น้ำตาลทราย', name_ko: '설탕', store: 'Big C', orderer: 'Aeey' },
+    { id: 'kitchen_04', photo: 'images/kitchen_04.jpg', name: 'ข้าวสารญี่ปุ่น', name_ko: '일본쌀', store: 'Big C', orderer: 'Aeey' },
+    { id: 'kitchen_05', photo: 'images/kitchen_05.jpg', name: 'ข้าวสารพนมรุ้ง', name_ko: '파놈룽 쌀', store: 'Big C', orderer: 'Aeey' },
+    { id: 'kitchen_06', photo: 'images/kitchen_06.jpg', name: 'น้ำมัน BERTOLLI', name_ko: '베르톨리 올리브유', store: 'Big C', orderer: 'Aeey' },
+    { id: 'kitchen_07', photo: 'images/kitchen_07.jpg', name: 'น้ำมันองุ่น', name_ko: '포도씨유', store: 'Big C', orderer: 'Aeey' },
+    { id: 'kitchen_08', photo: 'images/kitchen_08.jpg', name: 'น้ำยาล้างจาน ซัลไลน์', name_ko: '살라인 주방세제', store: 'Big C', orderer: 'Aeey' },
+  ],
+  paper: [
+    { id: 'paper_01', photo: 'images/paper_01.jpg', name: 'ทิชชู่เปียก', name_ko: '물티슈', store: 'Big C', orderer: 'Aeey' },
+    { id: 'paper_02', photo: 'images/paper_02.jpg', name: 'ถุงขยะดำ', name_ko: '검정 쓰레기봉투', store: 'Big C', orderer: 'Aeey' },
+    { id: 'paper_03', photo: 'images/paper_03.jpg', name: 'ทิชชู่แบบกล่อง', name_ko: '각티슈', store: 'Big C', orderer: 'Aeey' },
+    { id: 'paper_04', photo: 'images/paper_04.jpg', name: 'ทิชชู่แบบม้วนยาว', name_ko: '긴 두루마리 휴지', store: 'Big C', orderer: 'Aeey' },
+    { id: 'paper_05', photo: 'images/paper_05.jpg', name: 'ทิชชู่แบบม้วน', name_ko: '두루마리 휴지', store: 'Big C', orderer: 'Aeey' },
+  ],
+  other: [
+    { id: 'other_01', photo: 'images/other_01.jpg', name: 'น้ำหอมปรับอากาศ', name_ko: '방향제', store: 'Big C', orderer: 'Aeey' },
+    { id: 'other_02', photo: 'images/other_02.jpg', name: 'ยากันยุงแบบฉีด Baygon', name_ko: '바이곤 스프레이', store: 'Big C', orderer: 'Aeey' },
+    { id: 'other_03', photo: 'images/other_03.jpg', name: 'ยากันยุง Baygon', name_ko: '바이곤 모기약', store: 'Big C', orderer: 'Aeey' },
+  ],
+  drink: [
+    { id: 'drink_01', photo: 'images/drink_01.jpg', name: 'น้ำดื่มบลู', name_ko: '블루 생수', store: 'Marko', orderer: 'Aeey' },
+    { id: 'drink_02', photo: 'images/drink_02.jpg', name: 'สไปรท์', name_ko: '스프라이트', store: 'Marko', orderer: 'Aeey' },
+    { id: 'drink_03', photo: 'images/drink_03.jpg', name: 'แฟนต้าน้ำองุ่น', name_ko: '환타 포도', store: 'Marko', orderer: 'Aeey' },
+    { id: 'drink_04', photo: 'images/drink_04.jpg', name: 'แฟนต้าน้ำส้ม', name_ko: '환타 오렌지', store: 'Marko', orderer: 'Aeey' },
+    { id: 'drink_05', photo: 'images/drink_05.jpg', name: 'Coke Zero', name_ko: '코크 제로', store: 'Marko', orderer: 'Aeey' },
+    { id: 'drink_06', photo: 'images/drink_06.jpg', name: 'นมไทยเดนมาร์ค รสช๊อกโกแลต', name_ko: '타이덴마크 초코우유', store: 'Marko', orderer: 'Aeey' },
+  ],
+  pet: [
+    { id: 'pet_01', photo: 'images/pet_01.jpg', name: 'ขนมสุนัข', name_ko: '강아지 간식', store: 'Shopee', orderer: 'Dylan' },
+    { id: 'pet_02', photo: 'images/pet_02.jpg', name: 'อาหารปลาหางนกยูง', name_ko: '구피 사료', store: 'Shopee', orderer: 'Dylan' },
+    { id: 'pet_03', photo: 'images/pet_03.jpg', name: 'หญ้าทิโมธี 1Kg', name_ko: '거북이 먹이풀', store: 'Shopee', orderer: 'Dylan' },
+    { id: 'pet_04', photo: 'images/pet_04.jpg', name: 'อาหารเต่า Mazuri 1Kg', name_ko: '거북이 사료', store: 'Shopee', orderer: 'Dylan' },
+    { id: 'pet_05', photo: 'images/pet_05.jpg', name: 'อาหารสุนัข OLE 20Kg', name_ko: '도베르만 사료', store: 'Shopee', orderer: 'Dylan' },
+    { id: 'pet_06', photo: 'images/pet_06.jpg', name: 'อาหารสุนัข Royal Canin Starter 1Kg', name_ko: '치와와 사료', store: 'Shopee', orderer: 'Dylan' },
+  ],
+}
