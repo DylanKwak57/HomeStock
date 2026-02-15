@@ -16,11 +16,11 @@ export default function Cart({ items, onAdd, onSubtract, onRemove, onSubmit, onB
         <div className="p-4 pb-28">
           {items.map((item) => (
             <div key={item.id} className="flex items-center bg-white rounded-xl p-3.5 mb-2.5 gap-3 shadow-sm">
-              <div className="w-14 h-14 rounded-lg overflow-hidden bg-cream-dark flex-shrink-0">
+              <div className="w-14 h-14 rounded-lg overflow-hidden bg-white flex-shrink-0">
                 <img
                   src={`${BASE}${item.photo}`}
                   alt={item.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-0.5"
                 />
               </div>
               <div className="flex-1 min-w-0">

@@ -25,11 +25,11 @@ export default function ItemGrid({ category, isSelected, getQty, onAdd, onSubtra
                   {qty}
                 </div>
               )}
-              <div className="w-20 h-20 mb-1.5 rounded-xl overflow-hidden bg-cream-dark flex items-center justify-center">
+              <div className="w-20 h-20 mb-1.5 rounded-xl overflow-hidden bg-white flex items-center justify-center">
                 <img
                   src={`${BASE}${item.photo}`}
                   alt={item.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-1"
                   loading="lazy"
                 />
               </div>
