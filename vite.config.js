@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/HomeStock/',
   plugins: [
     react(),
     tailwindcss(),
@@ -14,13 +13,13 @@ export default defineConfig({
         name: 'สั่งของใช้ในบ้าน',
         short_name: 'ของใช้',
         description: 'สั่งของใช้ในบ้าน',
-        start_url: '/HomeStock/',
+        start_url: '/',
         display: 'standalone',
-        background_color: '#f5f5f5',
-        theme_color: '#1565c0',
+        background_color: '#FAF6F1',
+        theme_color: '#3E2723',
         icons: [
-          { src: '/HomeStock/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/HomeStock/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
         ],
       },
       workbox: {
