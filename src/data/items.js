@@ -34,7 +34,6 @@ export const ITEMS = {
   ],
   kitchen: [
     { id: 'kitchen_01', photo: 'images/kitchen_01.jpg', name: 'ซอสมะเขือเทศ', name_ko: '케첩', store: 'Big C', orderer: 'Aeey' },
-    { id: 'kitchen_02', photo: 'images/kitchen_02.jpg', name: 'นม Almond', name_ko: '아몬드우유', store: 'Big C', orderer: 'Aeey' },
     { id: 'kitchen_03', photo: 'images/kitchen_03.jpg', name: 'น้ำตาลทราย', name_ko: '설탕', store: 'Big C', orderer: 'Aeey' },
     { id: 'kitchen_04', photo: 'images/kitchen_04.jpg', name: 'ข้าวสารญี่ปุ่น', name_ko: '일본쌀', store: 'Big C', orderer: 'Aeey' },
     { id: 'kitchen_05', photo: 'images/kitchen_05.jpg', name: 'ข้าวสารพนมรุ้ง', name_ko: '파놈룽 쌀', store: 'Big C', orderer: 'Aeey' },
@@ -61,6 +60,7 @@ export const ITEMS = {
     { id: 'drink_04', photo: 'images/drink_04.jpg', name: 'แฟนต้าน้ำส้ม', name_ko: '환타 오렌지', store: 'Marko', orderer: 'Aeey' },
     { id: 'drink_05', photo: 'images/drink_05.jpg', name: 'Coke Zero', name_ko: '코크 제로', store: 'Marko', orderer: 'Aeey' },
     { id: 'drink_06', photo: 'images/drink_06.jpg', name: 'นมไทยเดนมาร์ค รสช๊อกโกแลต', name_ko: '타이덴마크 초코우유', store: 'Marko', orderer: 'Aeey' },
+    { id: 'drink_07', photo: 'images/drink_07.jpg', name: 'นม Almond', name_ko: '아몬드우유', store: 'Big C', orderer: 'Aeey' },
   ],
   pet: [
     { id: 'pet_01', photo: 'images/pet_01.jpg', name: 'ขนมสุนัข', name_ko: '강아지 간식', store: 'Shopee', orderer: 'Dylan' },
