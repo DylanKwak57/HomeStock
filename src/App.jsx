@@ -5,7 +5,7 @@ import Cart from './components/Cart'
 import SuccessScreen from './components/SuccessScreen'
 import { useCart } from './hooks/useCart'
 
-const WEBHOOK_URL = '' // n8n webhook URL - Phase 3에서 설정
+const WEBHOOK_URL = 'https://dylan-automation.app.n8n.cloud/webhook/homestock-order'
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('laundry')
@@ -21,8 +21,9 @@ export default function App() {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            items: items.map((i) => ({ id: i.id, name: i.name, name_ko: i.name_ko, qty: i.qty })),
+            items: items.map((i) => ({ id: i.id, name: i.name, name_ko: i.name_ko, qty: i.qty, store: i.store, orderer: i.orderer })),
             timestamp: new Date().toISOString(),
+            totalItems: items.reduce((sum, i) => sum + i.qty, 0),
           }),
         })
       } catch {
