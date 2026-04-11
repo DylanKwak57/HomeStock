@@ -8,6 +8,23 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="apple-touch-icon" href="/HomeStock/icon-192.png" />
     <title>สั่งของใช้ในบ้าน</title>
+    <script>
+      // Force clear old service worker cache (v2 - 2026-04-11)
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          registrations.forEach(function(registration) {
+            registration.update();
+          });
+        });
+        caches.keys().then(function(names) {
+          names.forEach(function(name) {
+            if (name.indexOf('workbox-precache') !== -1) {
+              caches.delete(name);
+            }
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
