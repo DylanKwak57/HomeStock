@@ -5,7 +5,7 @@ import Cart from './components/Cart'
 import SuccessScreen from './components/SuccessScreen'
 import { useCart } from './hooks/useCart'
 
-const WEBHOOK_URL = 'https://dylan-automation.app.n8n.cloud/webhook/homestock-order'
+const WEBHOOK_URL = 'https://n8n-to-td.vercel.app/api/webhook/homestock-order'
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('laundry')
