@@ -10,9 +10,12 @@ const WEBHOOK_URL = 'https://n8n-to-td.vercel.app/api/webhook/homestock-order'
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('laundry')
   const [view, setView] = useState('main') // main | cart | success
+  const [submitting, setSubmitting] = useState(false)
   const { add, subtract, remove, clear, getQty, isSelected, totalItems, uniqueCount, getSelectedItems } = useCart()
 
   const handleSubmit = async () => {
+    if (submitting) return
+    setSubmitting(true)
     const items = getSelectedItems()
 
     if (WEBHOOK_URL) {
@@ -34,6 +37,7 @@ export default function App() {
     setView('success')
     setTimeout(() => {
       setView('main')
+      setSubmitting(false)
       clear()
     }, 3000)
   }
@@ -49,6 +53,7 @@ export default function App() {
         onRemove={remove}
         onSubmit={handleSubmit}
         onBack={() => setView('main')}
+        submitting={submitting}
       />
     )
   }

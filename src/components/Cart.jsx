@@ -1,6 +1,6 @@
 const BASE = import.meta.env.BASE_URL
 
-export default function Cart({ items, onAdd, onSubtract, onRemove, onSubmit, onBack }) {
+export default function Cart({ items, onAdd, onSubtract, onRemove, onSubmit, onBack, submitting }) {
   return (
     <div className="min-h-screen bg-cream">
       <div className="max-w-[430px] mx-auto min-h-screen">
@@ -57,9 +57,10 @@ export default function Cart({ items, onAdd, onSubtract, onRemove, onSubmit, onB
           <div className="max-w-[430px] mx-auto p-4 pointer-events-auto bg-cream/90 backdrop-blur-sm">
             <button
               onClick={onSubmit}
-              className="w-full py-4 rounded-2xl border-none bg-brown-800 text-cream text-lg font-semibold cursor-pointer tracking-wide active:scale-[0.98] transition-transform shadow-[0_4px_24px_rgba(62,39,35,0.3)]"
+              disabled={submitting}
+              className={`w-full py-4 rounded-2xl border-none text-cream text-lg font-semibold tracking-wide transition-transform shadow-[0_4px_24px_rgba(62,39,35,0.3)] ${submitting ? 'bg-brown-400 cursor-not-allowed' : 'bg-brown-800 cursor-pointer active:scale-[0.98]'}`}
             >
-              ส่งรายการ
+              {submitting ? 'กำลังส่ง...' : 'ส่งรายการ'}
             </button>
           </div>
         </div>
